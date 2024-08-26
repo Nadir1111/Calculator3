@@ -1,0 +1,179 @@
+/* Reset and base styles  */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: none;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Links */
+
+a, a:link, a:visited  {
+    text-decoration: none;
+}
+
+a:hover  {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside, nav, footer, header, section, main {
+	display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-size: inherit;
+	font-weight: inherit;
+}
+
+ul, ul li {
+	list-style: none;
+}
+
+img {
+	vertical-align: top;
+}
+
+img, svg {
+	max-width: 100%;
+	height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+
+input, textarea, button, select {
+	font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+button, input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+
+label {
+	cursor: pointer;
+}
+
+legend {
+	display: block;
+}
+
+*{
+    color: white;
+    font-family: Roboto;
+    font-weight: 500;
+}
+/* CODE */
+
+
+
+.wrapper{
+    background-image: url(./calc.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.holder{
+    background-color: black;
+
+}
+
+.calc_btns{
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gray{
+    background-color: rgb(179, 179, 177);
+    color: black;
+    padding: 15px 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.number{
+    background-color: rgb(59, 59, 59);
+    color: white;
+    padding: 15px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.calc_output{
+    font-size: 35px;
+    margin-bottom: 10px;
+    text-align: right;
+    height: 50px;
+}
+
+.zero{
+    grid-column: span 2;
+    border-radius: 60px;
+}
+
+.orange{
+    background-color: rgb(255, 149, 0);
+    color: white;
+    padding: 15px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.equal{
+    background-color: rgb(255, 149, 0);
+    color: white;
+    padding: 15px 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.holder{
+    padding: 25px;
+    border-radius: 20px;
+}
